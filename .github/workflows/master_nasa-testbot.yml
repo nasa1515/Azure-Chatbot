@@ -35,5 +35,5 @@ jobs:
       with:
         app-name: 'nasa-testbot'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b8f4907e3f19473eb1b879b3b3122bcb }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5ed4c317b89246ca903182689fe04617 }}
         package: '.\app.zip'
