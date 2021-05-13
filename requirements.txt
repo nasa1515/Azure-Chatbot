@@ -1,2 +1,4 @@
 botbuilder-core>=4.7.0
-aiohttp
+aiohttp==3.4.4
+
+pip install --upgrade pip
