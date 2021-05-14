@@ -9,6 +9,7 @@ class DefaultConfig:
 
     PORT = 3978
     #APP_ID = os.environ.get("MicrosoftAppId", "60e15acf-0a7b-4532-9b94-29c2eb1299ac") --Service 추가한거
-    APP_ID = os.environ.get("MicrosoftAppId", "cc484559-dab6-4b34-ba7e-4f1b6925297b")
+    APP_ID = os.environ.get("MicrosoftAppId", "f3ade0ca-57c2-4b6f-9008-f4dabcc1ae36")
     # 밑에는 Client Secret
-    APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "aU4c~Q3Ze87ACC.SGWh6j230~.AKfw84.Q")
+    
+    #APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "aU4c~Q3Ze87ACC.SGWh6j230~.AKfw84.Q")
