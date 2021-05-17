@@ -57,7 +57,7 @@ async def on_error(context: TurnContext, error: Exception):
 ADAPTER.on_turn_error = on_error
 
 # Create the Bot
-BOT = MyBot(CONFIG)
+BOT = MyBot()
 
 
 # Listen for incoming requests on /api/messages
