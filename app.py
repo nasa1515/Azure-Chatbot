@@ -80,8 +80,14 @@ async def messages(req: Request) -> Response:
         raise exception
 
 
-APP = web.Application(middlewares=[aiohttp_error_middleware])
-APP.router.add_post("/api/messages", messages)
+#APP = web.Application(middlewares=[aiohttp_error_middleware])
+#APP.router.add_post("/api/messages", messages)
+
+
+def init_func(argv):
+    APP = web.Application(middlewares=[aiohttp_error_middleware])
+    APP.router.add_post("/api/messages", messages)
+    return APP
 
 if __name__ == "__main__":
     try:
