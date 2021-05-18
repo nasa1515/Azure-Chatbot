@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/85d52ba6-f4ef-491b-9ef4-799e9a390991/resourceGroups/pytest/providers/Microsoft.Web/sites/pytest-nasa",
+    "appService.deploySubpath": "."
+}
