@@ -12,6 +12,7 @@ from botbuilder.core import (
     TurnContext,
     BotFrameworkAdapter,
 )
+
 from botbuilder.core.integration import aiohttp_error_middleware
 from botbuilder.schema import Activity, ActivityTypes
 
@@ -77,7 +78,7 @@ async def messages(req: Request) -> Response:
             return json_response(data=response.body, status=response.status)
         return Response(status=201)
     except Exception as exception:
-        raise exception
+        raise exception 
 
 
 #APP = web.Application(middlewares=[aiohttp_error_middleware])
@@ -88,8 +89,9 @@ def init_func(argv):
     APP = web.Application(middlewares=[aiohttp_error_middleware])
     APP.router.add_post("/api/messages", messages)
     return APP
-
+    
 if __name__ == "__main__":
+    APP = init_func(None)
     try:
         web.run_app(APP, host="localhost", port=CONFIG.PORT)
     except Exception as error:
