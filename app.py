@@ -60,7 +60,6 @@ ADAPTER.on_turn_error = on_error
 # Create the Bot
 BOT = MyBot()
 
-
 # Listen for incoming requests on /api/messages
 async def messages(req: Request) -> Response:
     # Main bot message handler.
@@ -79,11 +78,6 @@ async def messages(req: Request) -> Response:
         return Response(status=201)
     except Exception as exception:
         raise exception 
-
-
-#APP = web.Application(middlewares=[aiohttp_error_middleware])
-#APP.router.add_post("/api/messages", messages)
-
 
 def init_func(argv):
     APP = web.Application(middlewares=[aiohttp_error_middleware])
